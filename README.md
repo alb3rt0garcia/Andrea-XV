@@ -1,1 +1,2 @@
-# Andrea XV\nProyecto base para GitHub Pages.
+# Andrea XV v2
+Versión base premium.

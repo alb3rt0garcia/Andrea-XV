@@ -1,1 +1,33 @@
-body{font-family:Arial,sans-serif;margin:0;background:#faf5f7;color:#333}.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;background:linear-gradient(#fdf7f9,#f6dce6)}.btn{padding:12px 20px;background:#c98aa3;color:#fff;text-decoration:none;border-radius:8px}section{padding:40px;max-width:900px;margin:auto}
+body{
+margin:0;
+font-family:Georgia,serif;
+background:#fff7f8;
+color:#4b3b40;
+text-align:center;
+}
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:linear-gradient(#fff7f8,#efd1dc);
+}
+.monograma{
+font-size:90px;
+color:#b58b62;
+border:2px solid #b58b62;
+border-radius:50%;
+width:140px;
+height:140px;
+line-height:140px;
+}
+h1{font-size:56px;}
+section{padding:45px 20px;}
+.btn{
+background:#b58b62;
+color:white;
+padding:14px 25px;
+border-radius:25px;
+text-decoration:none;
+}
