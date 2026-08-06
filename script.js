@@ -1,1 +1,0 @@
-console.log("Andrea XV v2 activo");
