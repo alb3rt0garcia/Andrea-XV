@@ -1,3 +1,49 @@
-const eventDate=new Date("2026-10-17T18:00:00-06:00");function tick(){let x=eventDate-Date.now();if(x<0)x=0;let s=1000,m=s*60,h=m*60,d=h*24;document.querySelector("#d").textContent=String(Math.floor(x/d)).padStart(2,"0");document.querySelector("#h").textContent=String(Math.floor(x%d/h)).padStart(2,"0");document.querySelector("#m").textContent=String(Math.floor(x%h/m)).padStart(2,"0");document.querySelector("#s").textContent=String(Math.floor(x%m/s)).padStart(2,"0")}tick();setInterval(tick,1000);
-const number="";const msg=encodeURIComponent("Hola, Andrea. Confirmo mi asistencia a tus XV años del 17 de octubre de 2026.");const wa=document.querySelector("#wa");if(number)wa.href=`https://wa.me/${number}?text=${msg}`;else wa.onclick=e=>{e.preventDefault();alert("Falta colocar el número definitivo de WhatsApp en script.js.");};
-document.querySelector("#cal").onclick=()=>{const x=["BEGIN:VCALENDAR","VERSION:2.0","BEGIN:VEVENT","DTSTART:20261017T180000","DTEND:20261018T000000","SUMMARY:XV años de Andrea","LOCATION:WTC Mexiquense, Naucalpan, Estado de México","END:VEVENT","END:VCALENDAR"].join("\r\n");const u=URL.createObjectURL(new Blob([x],{type:"text/calendar"}));const a=document.createElement("a");a.href=u;a.download="Andrea-XV.ics";a.click();URL.revokeObjectURL(u)};
+const eventDate = new Date("2026-10-17T18:00:00-06:00").getTime();
+
+function actualizarCuentaRegresiva() {
+const ahora = new Date().getTime();
+const diferencia = eventDate - ahora;
+
+if (diferencia <= 0) {
+document.getElementById("dias").textContent = "0";
+document.getElementById("horas").textContent = "0";
+document.getElementById("minutos").textContent = "0";
+document.getElementById("segundos").textContent = "0";
+return;
+}
+
+const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+const horas = Math.floor(
+(diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+);
+const minutos = Math.floor(
+(diferencia % (1000 * 60 * 60)) / (1000 * 60)
+);
+const segundos = Math.floor(
+(diferencia % (1000 * 60)) / 1000
+);
+
+document.getElementById("dias").textContent = dias;
+document.getElementById("horas").textContent = horas;
+document.getElementById("minutos").textContent = minutos;
+document.getElementById("segundos").textContent = segundos;
+}
+
+actualizarCuentaRegresiva();
+setInterval(actualizarCuentaRegresiva, 1000);
+
+const boton = document.querySelector("#cal");
+
+if (boton) {
+boton.onclick = () => {
+const numero = "";
+const mensaje = encodeURIComponent(
+"Hola, confirmo mi asistencia a los XV años de Andrea."
+);
+
+window.open(
+`https://wa.me/${numero}?text=${mensaje}`,
+"_blank"
+);
+};
+}
