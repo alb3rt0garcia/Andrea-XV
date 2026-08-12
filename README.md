@@ -1,20 +1,28 @@
-# Andrea XV — Sprint 3 Premium
+# Andrea XV — Sprint 4 Premium
 
-Entrega enfocada en estructura premium e interactividad funcional.
+## Cambio solicitado
+Se actualizó el primer teléfono de confirmación:
+- Nuevo número: **55 3129 6988**
+- Segundo número: **55 5127 0188**
 
-Incluye:
-- Cuenta regresiva al 17 de octubre de 2026, 18:00 hrs.
-- Ceremonia religiosa: Parroquia del Señor del Campo Florido, 17:00 hrs.
-- Botón de ubicación de ceremonia en Google Maps.
-- Recepción en WTC Mexiquense y botón de Waze.
-- Confirmación por WhatsApp con los dos números proporcionados.
-- Botón para agregar el evento al calendario.
-- Sección de álbum digital preparada para fotografías.
-- Código de vestimenta y mesa de regalos.
-- Vista de la invitación premium original.
-- Base preparada para Sprint 4: animaciones, fotografías reales y música.
+## Sprint 4 incluye
+- Pulido visual premium.
+- Animaciones suaves de entrada al hacer scroll.
+- Efecto sutil en el monograma y portada.
+- Galería digital preparada para fotografías reales.
+- Vista ampliada de las fotografías.
+- Botón de música con reproducción manual.
+- Soporte para `musica.mp3` en la raíz del proyecto.
+- Mantiene cuenta regresiva, ceremonia, mapas, Waze, WhatsApp y calendario.
 
-## Carga en GitHub Pages
-Sustituye `index.html`, `style.css` y `script.js` en la raíz del repositorio.
-Sube también `invitacion.jpg`.
-Haz commit en `main` y espera a que GitHub Pages publique los cambios.
+## Archivos
+- `index.html`
+- `style.css`
+- `script.js`
+- `invitacion.jpg`
+
+## Para activar música
+Sube un archivo llamado exactamente `musica.mp3` a la raíz del repositorio. Después el visitante pulsa **Activar música**.
+
+## Para agregar fotografías
+Los espacios 02–06 están preparados. Podemos sustituirlos cuando tengas las fotos definitivas.

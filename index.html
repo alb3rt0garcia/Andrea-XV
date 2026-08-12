@@ -61,7 +61,7 @@
     <h2>¿Nos acompañas?</h2>
     <p>Confirma tu asistencia por WhatsApp. Puedes utilizar cualquiera de los dos números.</p>
     <div class="confirm-grid">
-      <a class="primary" id="wa1" href="#" target="_blank" rel="noopener">Confirmar · 55 2551 2968</a>
+      <a class="primary" id="wa1" href="#" target="_blank" rel="noopener">Confirmar · 55 3129 6988</a>
       <a class="primary" id="wa2" href="#" target="_blank" rel="noopener">Confirmar · 55 5127 0188</a>
     </div>
     <p class="small">Tu confirmación nos ayudará a preparar tu lugar para esta noche especial.</p>
@@ -72,14 +72,15 @@
     <h2>Álbum digital</h2>
     <p>Muy pronto podrás ver aquí las fotografías de Andrea y de esta celebración.</p>
     <div class="album">
-      <div class="album-card">Foto<br><span>01</span></div>
-      <div class="album-card">Foto<br><span>02</span></div>
-      <div class="album-card">Foto<br><span>03</span></div>
-      <div class="album-card">Foto<br><span>04</span></div>
-      <div class="album-card">Foto<br><span>05</span></div>
-      <div class="album-card">Foto<br><span>06</span></div>
+      <figure class="album-card reveal"><img src="invitacion.jpg" alt="Invitación premium de Andrea"><figcaption>Invitación</figcaption></figure>
+      <figure class="album-card reveal"><span>Foto 02</span><figcaption>Próximamente</figcaption></figure>
+      <figure class="album-card reveal"><span>Foto 03</span><figcaption>Próximamente</figcaption></figure>
+      <figure class="album-card reveal"><span>Foto 04</span><figcaption>Próximamente</figcaption></figure>
+      <figure class="album-card reveal"><span>Foto 05</span><figcaption>Próximamente</figcaption></figure>
+      <figure class="album-card reveal"><span>Foto 06</span><figcaption>Próximamente</figcaption></figure>
     </div>
-    <p class="small">Sprint 4: fotografías reales, transiciones y música.</p>
+    <p class="small">Cuando tengas las fotografías, podremos sustituir estos espacios sin cambiar la estructura.</p>
+    <p class="small">Sprint 4: animaciones, galería fotográfica y música opcional.</p>
   </section>
 
   <section class="details">
@@ -95,6 +96,17 @@
     </div>
   </section>
 
+  <section class="music-section reveal">
+    <p class="eyebrow">AMBIENTE</p>
+    <h2>Música</h2>
+    <p>La música queda preparada para activarse con un archivo MP3 en el repositorio. El navegador requiere que el visitante pulse el botón para iniciar el audio.</p>
+    <audio id="music" preload="none" loop>
+      <source src="musica.mp3" type="audio/mpeg">
+    </audio>
+    <button class="secondary button" id="musicBtn" type="button">♪ Activar música</button>
+    <p id="musicStatus" class="small">Agrega <strong>musica.mp3</strong> a la raíz del proyecto cuando elijas la canción.</p>
+  </section>
+
   <section class="calendar">
     <p class="eyebrow">GUARDA LA FECHA</p>
     <h2>Agrega el evento a tu calendario</h2>
@@ -107,6 +119,10 @@
     <img src="invitacion.jpg" alt="Invitación de XV años de Andrea">
     <p class="small">Esta es la invitación premium base. El diseño de animación y los elementos multimedia se trabajarán en el Sprint 4.</p>
   </section>
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Cerrar">×</button>
+    <img id="lightboxImg" src="" alt="Fotografía ampliada">
+  </div>
 </main>
 
 <footer>
