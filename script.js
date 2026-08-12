@@ -1,49 +1,31 @@
-const eventDate = new Date("2026-10-17T18:00:00-06:00").getTime();
+const eventDate = new Date("2026-10-17T18:00:00-06:00");
 
-function actualizarCuentaRegresiva() {
-const ahora = new Date().getTime();
-const diferencia = eventDate - ahora;
-
-if (diferencia <= 0) {
-document.getElementById("dias").textContent = "0";
-document.getElementById("horas").textContent = "0";
-document.getElementById("minutos").textContent = "0";
-document.getElementById("segundos").textContent = "0";
-return;
+function tick(){
+  let x = Math.max(0, eventDate - Date.now());
+  const s=1000, m=s*60, h=m*60, d=h*24;
+  document.querySelector("#d").textContent=String(Math.floor(x/d)).padStart(2,"0");
+  document.querySelector("#h").textContent=String(Math.floor((x%d)/h)).padStart(2,"0");
+  document.querySelector("#m").textContent=String(Math.floor((x%h)/m)).padStart(2,"0");
+  document.querySelector("#s").textContent=String(Math.floor((x%m)/s)).padStart(2,"0");
 }
+tick();
+setInterval(tick,1000);
 
-const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-const horas = Math.floor(
-(diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-);
-const minutos = Math.floor(
-(diferencia % (1000 * 60 * 60)) / (1000 * 60)
-);
-const segundos = Math.floor(
-(diferencia % (1000 * 60)) / 1000
-);
+const msg=encodeURIComponent("Hola, Andrea. Confirmo mi asistencia a tus XV años del 17 de octubre de 2026.");
+document.querySelector("#wa1").href=`https://wa.me/525525512968?text=${msg}`;
+document.querySelector("#wa2").href=`https://wa.me/525551270188?text=${msg}`;
 
-document.getElementById("dias").textContent = dias;
-document.getElementById("horas").textContent = horas;
-document.getElementById("minutos").textContent = minutos;
-document.getElementById("segundos").textContent = segundos;
-}
-
-actualizarCuentaRegresiva();
-setInterval(actualizarCuentaRegresiva, 1000);
-
-const boton = document.querySelector("#cal");
-
-if (boton) {
-boton.onclick = () => {
-const numero = "";
-const mensaje = encodeURIComponent(
-"Hola, confirmo mi asistencia a los XV años de Andrea."
-);
-
-window.open(
-`https://wa.me/${numero}?text=${mensaje}`,
-"_blank"
-);
-};
-}
+document.querySelector("#cal").addEventListener("click",()=>{
+  const lines=[
+    "BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Andrea XV//ES",
+    "BEGIN:VEVENT","DTSTART:20261017T170000","DTEND:20261017T230000",
+    "SUMMARY:XV años de Andrea",
+    "LOCATION:WTC Mexiquense, Naucalpan de Juárez, Estado de México",
+    "DESCRIPTION:Ceremonia religiosa a las 17:00 hrs y recepción a las 18:00 hrs.",
+    "END:VEVENT","END:VCALENDAR"
+  ];
+  const blob=new Blob([lines.join("\\r\\n")],{type:"text/calendar;charset=utf-8"});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement("a"); a.href=url; a.download="Andrea-XV-17-octubre-2026.ics";
+  document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+});
