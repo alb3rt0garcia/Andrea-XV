@@ -1,14 +1,14 @@
-# Andrea XV — Sprint 4 FINAL
+SPRINT 4 FINAL 2 — ANDREA XV
 
-Esta versión usa la imagen ORIGINAL proporcionada por el usuario como portada, en lugar de redibujarla.
+Subir a la raíz de la rama main:
+- index.html
+- style.css
+- script.js
+- invitacion-original (imagen)
 
-Incluye:
-- Invitación original conservada como `invitacion-original.jpg`.
-- Botón «DESCUBRE MI INVITACIÓN» superpuesto y funcional.
-- Cuenta regresiva.
-- Ceremonia religiosa y ubicación.
-- Recepción/Waze.
-- Dos números de confirmación.
-- Sección de álbum digital.
+Incluye invitación original, botón Descubre mi invitación, cuenta regresiva,
+ceremonia, recepción, Maps, Waze, dos WhatsApp, álbum, vestimenta y mesa de regalos.
 
-Para publicar: subir `index.html`, `style.css`, `script.js` e `invitacion-original.jpg` a la raíz de `main`.
+Confirmación:
+55 5127 0188
+55 3129 6988
