@@ -1,0 +1,1 @@
+Sustituye en GitHub index.html, style.css y script.js. Conserva invitacion-original.jpg. Incluye portada, botón Descubre mi invitación, cuenta regresiva, ceremonia, recepción, Maps/Waze, ambos teléfonos, álbum digital, vestimenta y mesa de regalos.
