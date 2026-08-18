@@ -4,7 +4,7 @@ Esta versión integra la interfaz aprobada y usa la invitación proporcionada co
 
 ## Incluye
 - Invitación original como portada.
-- Botón clickeable **Descubre mi invitación** sobre la invitación.
+- Botón **Descubre mi invitación** integrado en la imagen original; la zona visual del botón es clickeable sin superponer un botón HTML.
 - Cuenta regresiva al 17 de octubre de 2026, 18:00.
 - Ceremonia religiosa a las 17:00 con ícono de iglesia y Google Maps.
 - Recepción WTC Mexiquense a las 18:00 con ícono de salón y Waze.
@@ -16,3 +16,10 @@ Esta versión integra la interfaz aprobada y usa la invitación proporcionada co
 
 ## Publicación
 Sube `index.html`, `style.css`, `script.js`, la carpeta `icons` y `invitacion-original.png` al repositorio de GitHub Pages.
+
+
+## Corrección de esta entrega
+- Se eliminó el botón HTML transparente/superpuesto.
+- La portada usa una ruta relativa `./invitacion-original.png`, compatible con GitHub Pages.
+- El toque/clic se detecta únicamente sobre la zona del botón que ya forma parte de la imagen original.
+- La navegación funciona en celular y escritorio y conserva los gráficos individuales de cada sección.
