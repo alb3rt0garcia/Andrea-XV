@@ -1,4 +1,4 @@
-const target=new Date('2026-10-17T18:00:00-06:00').getTime();
+const target=new Date('2026-10-17T17:00:00-06:00').getTime();
 function tick(){const n=Math.max(0,Math.floor((target-Date.now())/1000));const v=[Math.floor(n/86400),Math.floor(n%86400/3600),Math.floor(n%3600/60),n%60];['d','h','m','s'].forEach((id,i)=>document.getElementById(id).textContent=String(v[i]).padStart(2,'0'))}tick();setInterval(tick,1000);
 
 
@@ -17,6 +17,7 @@ function openInvitationFromCover(event) {
 
   if (x >= buttonArea.left && x <= buttonArea.right &&
       y >= buttonArea.top && y <= buttonArea.bottom) {
+    startMusic();
     document.getElementById('contenido').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }
@@ -26,28 +27,40 @@ cover.addEventListener('click', openInvitationFromCover);
 cover.addEventListener('keydown', (event) => {
   if (event.key === 'Enter' || event.key === ' ') {
     event.preventDefault();
+    startMusic();
     document.getElementById('contenido').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 });
 
 
-// Música: se reproduce al tocar el botón para respetar las restricciones
-// de reproducción automática de los navegadores móviles.
+// Música: en celulares los navegadores bloquean el autoplay con sonido
+// hasta que exista una interacción del usuario. Por eso la iniciamos
+// automáticamente en el primer toque de "Descubre mi invitación".
 const musicButton = document.getElementById('musicButton');
 const musicFrame = document.getElementById('musicFrame');
 const youtubeEmbed = 'https://www.youtube.com/embed/igIfiqqVHtA?autoplay=1&loop=1&playlist=igIfiqqVHtA&rel=0';
 
+function startMusic() {
+  if (musicFrame && !musicFrame.src) {
+    musicFrame.src = youtubeEmbed;
+    if (musicButton) {
+      musicButton.textContent = '❚❚ Pausar';
+      musicButton.setAttribute('aria-pressed', 'true');
+    }
+  }
+}
+
+function stopMusic() {
+  if (musicFrame) musicFrame.src = '';
+  if (musicButton) {
+    musicButton.textContent = '▶ Reproducir';
+    musicButton.setAttribute('aria-pressed', 'false');
+  }
+}
+
 if (musicButton && musicFrame) {
   musicButton.addEventListener('click', () => {
     const playing = musicButton.getAttribute('aria-pressed') === 'true';
-    if (!playing) {
-      musicFrame.src = youtubeEmbed;
-      musicButton.textContent = '❚❚ Pausar';
-      musicButton.setAttribute('aria-pressed', 'true');
-    } else {
-      musicFrame.src = '';
-      musicButton.textContent = '▶ Reproducir';
-      musicButton.setAttribute('aria-pressed', 'false');
-    }
+    if (playing) stopMusic(); else startMusic();
   });
 }
