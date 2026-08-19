@@ -38,11 +38,12 @@ cover.addEventListener('keydown', (event) => {
 // automáticamente en el primer toque de "Descubre mi invitación".
 const musicButton = document.getElementById('musicButton');
 const musicFrame = document.getElementById('musicFrame');
-const youtubeEmbed = 'https://www.youtube.com/embed/igIfiqqVHtA?autoplay=1&loop=1&playlist=igIfiqqVHtA&rel=0';
+const youtubeEmbed = 'https://www.youtube.com/embed/igIfiqqVHtA?autoplay=1&loop=1&playlist=igIfiqqVHtA&rel=0&playsinline=1';
 
 function startMusic() {
   if (musicFrame && !musicFrame.src) {
     musicFrame.src = youtubeEmbed;
+    musicFrame.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture');
     if (musicButton) {
       musicButton.textContent = '❚❚ Pausar';
       musicButton.setAttribute('aria-pressed', 'true');

@@ -2,6 +2,6 @@
 
 .music-card{margin:18px 0 0;padding:13px 14px;background:#fff;border:1px solid #efd1d8;border-radius:14px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 2px 9px #8c556012}.music-copy{display:flex;align-items:center;gap:10px;text-align:left}.music-copy strong{display:block;color:#a84d62;font-size:14px}.music-copy small{display:block;margin-top:3px;color:#7c5a60;font-size:11px}.music-note{width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:#f9e2e7;color:#b34e68;font-size:20px}.music-btn{border:0;border-radius:22px;padding:10px 14px;background:#dc6380;color:#fff;font:inherit;font-size:12px;font-weight:bold;cursor:pointer;white-space:nowrap}.music-frame{position:absolute;width:1px;height:1px;border:0;opacity:0;pointer-events:none}@media(max-width:560px){.music-card{align-items:stretch;flex-direction:column}.music-btn{width:100%}}
 
-.invitation-text{max-width:620px;margin:10px auto 4px;padding:4px 12px;color:#6a474b;font-size:16px;line-height:1.65}
-.invitation-text p{margin:0}
+.invitation-text{max-width:620px;margin:10px auto 4px;padding:4px 12px;color:#6a474b;font-size:16px;line-height:1.65;letter-spacing:.2px}
+.invitation-text p{margin:0;text-transform:uppercase}
 @media(max-width:560px){.invitation-text{font-size:15px;line-height:1.55}}
