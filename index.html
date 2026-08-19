@@ -1,31 +1,40 @@
 <!doctype html>
 <html lang="es">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Andrea XV — Invitación</title><link rel="stylesheet" href="style.css"></head>
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Andrea XV | Invitación</title>
+<link rel="stylesheet" href="style.css">
+</head>
 <body>
-<section class="cover">
-<img src="invitacion-original.jpeg" alt="Invitación de XV años de Andrea">
-<a class="discover" href="#contenido">✨ DESCUBRE MI INVITACIÓN ✨</a>
+<header class="top"><strong>Andrea XV</strong><span aria-label="Menú">☰</span></header>
+<main>
+<section class="cover" aria-label="Invitación principal">
+  <img id="coverImage" src="./invitacion-original.png" alt="Invitación de XV años de Andrea" tabindex="0" role="button" aria-label="Descubre mi invitación">
 </section>
-<section id="contenido" class="content">
-<p class="eyebrow">ANDREA · MIS XV AÑOS</p>
-<h1>17 de octubre de 2026</h1>
-<div class="countdown">
-<div><b id="d">00</b><span>Días</span></div><div><b id="h">00</b><span>Horas</span></div>
-<div><b id="m">00</b><span>Minutos</span></div><div><b id="s">00</b><span>Segundos</span></div>
-</div>
-<div class="grid">
-<article><h2>⛪ Ceremonia religiosa</h2><p>Parroquia del Señor del Campo Florido<br>17:00 horas</p>
-<a href="https://maps.google.com/?q=19.498005,-99.231422" target="_blank">📍 Ver ubicación</a></article>
-<article><h2>🏛️ Recepción</h2><p>WTC Mexiquense<br>18:00 horas</p>
-<a href="https://waze.com/ul/h9g3qvvgg6" target="_blank">🚗 Cómo llegar con Waze</a></article>
-<article><h2>💗 Confirmación</h2><p>Tu confirmación es importante.</p>
-<a href="https://wa.me/525551270188" target="_blank">55 5127 0188</a>
-<a href="https://wa.me/525531296988" target="_blank">55 3129 6988</a></article>
-<article><h2>📸 Álbum digital</h2><p>Espacio preparado para las fotografías.</p></article>
-<article><h2>👗 Código de vestimenta</h2><p>Formal / Etiqueta<br>Color reservado: rosa</p></article>
-<article><h2>🎁 Mesa de regalos</h2><p>Mesa de regalos y buzón de sobres.</p></article>
-</div></section>
-<footer>Andrea · Mis XV años · 17 de octubre de 2026</footer>
+<section id="contenido" class="section intro">
+  <p class="eyebrow">ANDREA · MIS XV AÑOS</p><h1>Una noche para recordar</h1>
+  <div class="countdown" aria-label="Cuenta regresiva">
+    <div><b id="d">00</b><small>DÍAS</small></div><div><b id="h">00</b><small>HORAS</small></div>
+    <div><b id="m">00</b><small>MINUTOS</small></div><div><b id="s">00</b><small>SEGUNDOS</small></div>
+  </div>
+  <p>17 DE OCTUBRE DE 2026 · 18:00 HORAS</p>
+  <section class="music-card" aria-label="Música de la invitación">
+    <div class="music-copy">
+      <span class="music-note">♪</span>
+      <div><strong>Música de la invitación</strong><small>Enchanted · Taylor Swift</small></div>
+    </div>
+    <button id="musicButton" class="music-btn" type="button" aria-pressed="false">▶ Reproducir</button>
+    <iframe id="musicFrame" class="music-frame" title="Música de la invitación" allow="autoplay; encrypted-media" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </section>
+</section>
+<section id="ceremonia" class="section card"><img class="icon" src="icons/iglesia.svg" alt=""><div><h2>Ceremonia religiosa</h2><p><b>Parroquia del Señor del Campo Florido</b><br>17 de octubre de 2026 · 17:00 horas</p><a class="btn" target="_blank" href="https://maps.google.com/?q=19.498005,-99.231422">Ver ubicación</a></div></section>
+<section id="recepcion" class="section card"><img class="icon" src="icons/recepcion.svg" alt=""><div><h2>Recepción</h2><p><b>WTC Mexiquense</b><br>18:00 horas<br>Circuito Circunvalación Oriente 10, Naucalpan de Juárez, Estado de México.</p><a class="btn" target="_blank" href="https://waze.com/ul/h9g3qvvgg6">Cómo llegar (Waze)</a></div></section>
+<section id="confirmacion" class="section card"><img class="icon" src="icons/whatsapp.svg" alt=""><div><h2>Confirmación</h2><p>Tu confirmación es muy importante para que todo sea perfecto.</p><a class="whatsapp" target="_blank" href="https://wa.me/525551270188">55 5127 0188</a><a class="whatsapp" target="_blank" href="https://wa.me/525531296988">55 3129 6988</a></div></section>
+<section id="vestimenta" class="section card"><div class="dual-icons"><img src="icons/traje.svg" alt="Traje"><img src="icons/vestido.svg" alt="Vestido"></div><div><h2>Código de vestimenta</h2><p><b>Formal / Etiqueta</b><br>Color reservado: rosa</p></div></section>
+<section id="album" class="section card"><img class="icon" src="icons/album.svg" alt=""><div><h2>Álbum digital</h2><p>Próximamente podrás ver aquí los mejores momentos de esta celebración.</p><div class="album-grid"><span>📷</span><span>👑</span><span>🌸</span></div></div></section>
+<section id="regalos" class="section card"><img class="icon" src="icons/regalo.svg" alt=""><div><h2>Mesa de regalos</h2><p>Mesa de regalos y buzón de sobres.</p><p>El mejor regalo será compartir este día tan especial contigo.</p></div></section>
+</main>
+<nav class="bottom"><a href="#contenido">⌂<small>INICIO</small></a><a href="#ceremonia">⛪<small>CEREMONIA</small></a><a href="#recepcion">🏛️<small>RECEPCIÓN</small></a><a href="#confirmacion">✓<small>CONFIRMACIÓN</small></a><a href="#album">▧<small>ÁLBUM</small></a><a href="#regalos">🎁<small>REGALOS</small></a></nav>
+<footer>Con amor, para un día inolvidable 💗</footer>
 <script src="script.js"></script>
 </body></html>
