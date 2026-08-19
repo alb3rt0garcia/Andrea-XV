@@ -1,28 +1,31 @@
-# Andrea XV — Sprint 4 Final 2 Corregido
+# Andrea XV — Sprint 4 Final 2 · Ajuste final
 
-Esta versión integra la interfaz aprobada y usa la invitación proporcionada como portada.
+## Cambios de esta entrega
+- La portada sigue siendo la invitación original.
+- Se integró en la PRIMERA PÁGINA el texto de padres y madrina:
+  - CON LA BENDICIÓN DE DIOS
+  - Y EL AMOR DE MIS PADRES
+  - BLANCA CASTILLO Y ALBERTO GARCÍA
+  - Y EL CARIÑO DE MI MADRINA IRMA CASTILLO
+  - TENEMOS EL HONOR DE INVITARTE A CELEBRAR
+- Se eliminó el bloque de padres/madrina de la zona de la cuenta regresiva.
+- La cuenta regresiva está configurada al 17 de octubre de 2026 a las 17:00 hrs.
+- La portada inicia la navegación y hace el intento de reproducir la música en el mismo toque del usuario.
+- La música usa el reproductor de YouTube; los navegadores móviles pueden bloquear autoplay con sonido.
+- Se sustituyeron los gráficos de ceremonia y recepción por las imágenes proporcionadas por el usuario.
+- El código de vestimenta usa los gráficos de traje y vestido recortados de la invitación original.
+- Los gráficos están como archivos individuales en la raíz del repositorio; no se requiere carpeta `icons`.
+- Se mantienen los dos WhatsApp y sus mensajes prellenados.
 
-## Incluye
-- Invitación original como portada.
-- Botón **Descubre mi invitación** integrado en la imagen original; la zona visual del botón es clickeable sin superponer un botón HTML.
-- Cuenta regresiva al 17 de octubre de 2026, 18:00.
-- Ceremonia religiosa a las 17:00 con ícono de iglesia y Google Maps.
-- Recepción WTC Mexiquense a las 18:00 con ícono de salón y Waze.
-- Confirmación con ícono de WhatsApp y ambos teléfonos: 55 5127 0188 y 55 3129 6988.
-- Código de vestimenta con gráficos de traje y vestido.
-- Álbum digital con gráfico de fotografías.
-- Mesa de regalos con gráfico de regalo.
-- Navegación inferior y diseño responsive.
-
-## Publicación
-Sube `index.html`, `style.css`, `script.js`, la carpeta `icons` y `invitacion-original.png` al repositorio de GitHub Pages.
-
-
-## Corrección de esta entrega
-- Se eliminó el botón HTML transparente/superpuesto.
-- La portada usa una ruta relativa `./invitacion-original.png`, compatible con GitHub Pages.
-- El toque/clic se detecta únicamente sobre la zona del botón que ya forma parte de la imagen original.
-- La navegación funciona en celular y escritorio y conserva los gráficos individuales de cada sección.
-
-
-Música integrada: YouTube video ID `igIfiqqVHtA` (Enchanted · Taylor Swift). Se inicia al pulsar “Reproducir” para que funcione en celulares sin depender del autoplay automático.
+## Archivos principales
+index.html
+style.css
+script.js
+invitacion-original.png
+iglesia-foto.jpg
+wtc-foto.jpg
+traje-original.png
+vestido-original.png
+whatsapp.svg
+album.svg
+regalo.svg
