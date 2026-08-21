@@ -11,9 +11,7 @@ Versión preparada para GitHub Pages.
 - Código de vestimenta con traje y vestido completos, **COLOR RESERVADO: ROSA** y círculo rosa.
 - Íconos elegantes para inicio, confirmación, álbum y regalos.
 - Navegación inferior con los mismos gráficos/fotos usados en las secciones.
-- Música local en `music/andrea-xv-original.mp3`, sin reproductor de YouTube ni anuncios.
+- Música local incrustada directamente dentro de `index.html`, sin carpeta `music/`, sin reproductor de YouTube ni anuncios.
 
 ## GitHub Pages
-Sube todos los archivos a la raíz del repositorio `Andrea-XV`, conservando la carpeta `music/` y el archivo `music/andrea-xv-original.mp3`.
-
-No se necesita la carpeta `icons/`.
+Sube todos los archivos a la raíz del repositorio `Andrea-XV`. No se necesita la carpeta `music/` ni la carpeta `icons/`; la música está incrustada dentro de `index.html`.
