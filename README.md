@@ -1,10 +1,6 @@
-Andrea XV – versión corregida
+Andrea XV - versión Spotify
 
-Cambios:
-- Portada limpia: se eliminó la mancha/artefacto alrededor de “LOS”.
-- Se conservó la composición y tipografía del resto de la invitación.
-- Código de vestimenta con traje y vestido completos y limpios.
-- Enchanted se reproduce mediante el reproductor oficial de YouTube.
+La música usa el reproductor oficial de Spotify para Enchanted (Taylor's Version) de Taylor Swift.
+El enlace corresponde a la pista indicada por el usuario. La reproducción completa depende de las condiciones de Spotify y de la cuenta del visitante; el sitio no aloja ni copia el audio.
 
-Nota sobre anuncios:
-GitHub Pages no puede eliminar anuncios de YouTube. Para reproducción de Enchanted sin anuncios, se requiere YouTube Premium o un archivo de audio que tengas legalmente y que pueda integrarse localmente.
+No se requiere carpeta music ni archivo MP3.
