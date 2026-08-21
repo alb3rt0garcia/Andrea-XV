@@ -22,8 +22,9 @@ main{max-width:760px;margin:auto}
 .btn,.whatsapp{display:block;width:min(100%,330px);margin:10px auto 0;padding:11px 16px;border-radius:24px;text-align:center;text-decoration:none;font-weight:bold}
 .btn{background:#dc6380;color:#fff}
 .whatsapp{background:#dc5d7c;color:#fff}
-.dual-icons{display:flex;gap:14px;flex:0 0 160px;justify-content:center;align-items:center}
-.dual-icons img{width:66px;height:110px;object-fit:contain;background:#fff8f5;border-radius:12px;box-shadow:0 2px 8px #8c556015;padding:4px}
+.dual-icons{display:flex;gap:18px;flex:0 0 190px;justify-content:center;align-items:center}
+.dual-icons img{width:82px;height:135px;object-fit:contain;background:transparent;border-radius:0;box-shadow:none;padding:0}
+.dress-card{background:linear-gradient(180deg,#fffaf8,#fff4f6)}
 .dress-card{align-items:center}
 .dress-copy{flex:1}
 .dress-copy .formal{margin-top:2px}
@@ -44,14 +45,17 @@ footer{text-align:center;padding:26px;color:#8b5961}
 .music-btn{border:0;border-radius:22px;padding:10px 15px;background:#dc6380;color:#fff;font:inherit;font-size:12px;font-weight:bold;cursor:pointer;white-space:nowrap}
 .music-status{grid-column:1/-1;display:block;width:100%;font-size:10px;color:#8b5961;text-align:center;margin-top:0}
 .music-card audio{display:none}
+.youtube-player-wrap{grid-column:1/-1;width:100%;max-width:420px;margin:2px auto 0;display:none;border-radius:14px;overflow:hidden;background:#000;box-shadow:0 2px 9px #8c556020}
+.youtube-player-wrap iframe{display:block;width:100%;aspect-ratio:16/9;border:0}
+
 @media(max-width:560px){
  body{padding-bottom:82px}
  .section{padding:18px}
  .card{align-items:flex-start}
  .card h2{font-size:17px}
  .countdown b{font-size:23px}
- .dual-icons{flex-basis:115px;gap:7px}
- .dual-icons img{width:50px;height:95px}
+ .dual-icons{flex-basis:125px;gap:7px}
+ .dual-icons img{width:58px;height:105px}
  .place-photo{width:82px;height:82px;flex-basis:82px}
  .music-card{grid-template-columns:1fr}
  .music-btn{width:100%}

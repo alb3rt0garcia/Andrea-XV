@@ -8,30 +8,32 @@ tick();setInterval(tick,1000);
 
 const cover=document.getElementById('coverImage');
 const musicButton=document.getElementById('musicButton');
-const musicAudio=document.getElementById('musicAudio');
 const musicStatus=document.getElementById('musicStatus');
+const youtubeWrap=document.getElementById('youtubePlayerWrap');
 let musicStarted=false;
+const youtubeVideoId='igIfiqqVHtA';
 
-async function startMusic(){
-  if(!musicAudio)return false;
-  try{
-    musicAudio.muted=false;
-    await musicAudio.play();
-    musicStarted=true;
-    if(musicButton){musicButton.textContent='❚❚ Pausar música';musicButton.setAttribute('aria-pressed','true')}
-    if(musicStatus)musicStatus.textContent='Música activa · audio local · sin anuncios.';
-    return true;
-  }catch(err){
-    musicStarted=false;
-    if(musicStatus)musicStatus.textContent='El navegador bloqueó el inicio automático. Toca “Activar música”.';
-    return false;
+function startMusic(){
+  if(!youtubeWrap)return false;
+  if(!youtubeWrap.querySelector('iframe')){
+    const iframe=document.createElement('iframe');
+    iframe.src=`https://www.youtube-nocookie.com/embed/${youtubeVideoId}?autoplay=1&playsinline=1&rel=0`;
+    iframe.title='Enchanted · Taylor Swift';
+    iframe.allow='autoplay; encrypted-media; picture-in-picture';
+    iframe.allowFullscreen=true;
+    youtubeWrap.appendChild(iframe);
   }
+  youtubeWrap.style.display='block';
+  musicStarted=true;
+  if(musicButton){musicButton.textContent='♪ Enchanted activa';musicButton.setAttribute('aria-pressed','true')}
+  if(musicStatus)musicStatus.textContent='Enchanted · reproducción oficial de YouTube.';
+  return true;
 }
 function stopMusic(){
-  if(!musicAudio)return;
-  musicAudio.pause();musicAudio.currentTime=0;musicStarted=false;
-  if(musicButton){musicButton.textContent='▶ Activar música';musicButton.setAttribute('aria-pressed','false')}
-  if(musicStatus)musicStatus.textContent='';
+  if(youtubeWrap){youtubeWrap.innerHTML='';youtubeWrap.style.display='none';}
+  musicStarted=false;
+  if(musicButton){musicButton.textContent='▶ Escuchar Enchanted';musicButton.setAttribute('aria-pressed','false')}
+  if(musicStatus)musicStatus.textContent='Toca el botón para iniciar la canción.';
 }
 function enterInvitation(){
   startMusic();

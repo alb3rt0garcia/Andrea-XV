@@ -1,17 +1,11 @@
-# Andrea XV — Sprint 4 Final
+# Andrea XV — versión actualizada
 
-Versión preparada para GitHub Pages.
+- Portada limpia: se eliminó la mancha sobre “LOS”.
+- Código de vestimenta: traje y vestido completos, con mejor margen y sin recortes.
+- Música: “Enchanted” de Taylor Swift mediante reproductor oficial de YouTube.
 
-## Incluye
-- Portada limpia con el texto de padres y madrina.
-- Cuenta regresiva al 17 de octubre de 2026 a las 17:00 HRS.
-- Fotografía de la iglesia para ceremonia.
-- Fotografía del WTC Ciudad Satélite para recepción.
-- Confirmación por WhatsApp con mensaje inicial.
-- Código de vestimenta con traje y vestido completos, **COLOR RESERVADO: ROSA** y círculo rosa.
-- Íconos elegantes para inicio, confirmación, álbum y regalos.
-- Navegación inferior con los mismos gráficos/fotos usados en las secciones.
-- Música local incrustada directamente dentro de `index.html`, sin carpeta `music/`, sin reproductor de YouTube ni anuncios.
+## Música
+La canción se reproduce desde el reproductor oficial de YouTube. No se incluye el audio de la canción dentro del proyecto. YouTube puede mostrar anuncios o restricciones de reproducción según región, cuenta y dispositivo; el sitio no puede eliminar esos anuncios.
 
-## GitHub Pages
-Sube todos los archivos a la raíz del repositorio `Andrea-XV`. No se necesita la carpeta `music/` ni la carpeta `icons/`; la música está incrustada dentro de `index.html`.
+## Archivos
+Todos los gráficos se cargan desde la raíz del repositorio; no se requiere carpeta `icons` ni carpeta `music`.
