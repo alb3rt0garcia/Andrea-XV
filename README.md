@@ -1,5 +1,19 @@
-# Andrea XV — versión sin anuncios
+# Andrea XV — Sprint 4 Final
 
-Esta versión usa un archivo de audio local (`music/andrea-xv-original.mp3`) para evitar anuncios, reproductores externos y dependencias de YouTube. La música se intenta reproducir en el mismo toque sobre la portada; si el navegador bloquea el audio, se puede activar con el botón de música.
+Versión preparada para GitHub Pages.
 
-**Importante:** la pista local incluida es un instrumental original creado para esta invitación. Si deseas usar exactamente “Enchanted (Taylor’s Version)”, debes proporcionar un archivo de audio que tengas derecho a usar; no se incluye ni se extrae la grabación comercial de YouTube.
+## Incluye
+- Portada limpia con el texto de padres y madrina.
+- Cuenta regresiva al 17 de octubre de 2026 a las 17:00 HRS.
+- Fotografía de la iglesia para ceremonia.
+- Fotografía del WTC Ciudad Satélite para recepción.
+- Confirmación por WhatsApp con mensaje inicial.
+- Código de vestimenta con traje y vestido completos, **COLOR RESERVADO: ROSA** y círculo rosa.
+- Íconos elegantes para inicio, confirmación, álbum y regalos.
+- Navegación inferior con los mismos gráficos/fotos usados en las secciones.
+- Música local en `music/andrea-xv-original.mp3`, sin reproductor de YouTube ni anuncios.
+
+## GitHub Pages
+Sube todos los archivos a la raíz del repositorio `Andrea-XV`, conservando la carpeta `music/` y el archivo `music/andrea-xv-original.mp3`.
+
+No se necesita la carpeta `icons/`.

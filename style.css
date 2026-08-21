@@ -1,60 +1,61 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:#faeef0;color:#5b3e40;font-family:Georgia,'Times New Roman',serif}
-.top{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:13px 20px;background:#d95f7d;color:#fff;font-size:20px;box-shadow:0 2px 8px #0002}
+body{margin:0;background:#faeef0;color:#4f383b;font-family:Georgia,'Times New Roman',serif;padding-bottom:84px}
 main{max-width:760px;margin:auto}
 .cover{position:relative;background:#fff}
 .cover>img{display:block;width:100%;height:auto;cursor:pointer}
-.section{margin:12px;padding:22px;background:#fffaf8;border:1px solid #efd1d8;border-radius:14px;box-shadow:0 3px 12px #8c556015}
+.section{margin:12px;padding:22px;background:#fffaf8;border:1px solid #efd1d8;border-radius:18px;box-shadow:0 3px 12px #8c556015}
 .intro{text-align:center}
 .eyebrow{letter-spacing:2px;color:#b64d68;font-size:13px}
-.intro h1{color:#a84d62;font-weight:500;font-size:28px}
-.event-date{margin:0 0 4px;font-weight:600;color:#8c4d5a}
-.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:20px 0}
-.countdown div{background:#f9e2e7;border-radius:9px;padding:11px}
+.intro h1{color:#a84d62;font-weight:500;font-size:28px;margin:8px 0 14px}
+.event-date{margin:0 0 4px;font-weight:700;color:#8c4d5a}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:20px 0 14px}
+.countdown div{background:#f9e2e7;border:1px solid #efb8c5;border-radius:12px;padding:11px}
 .countdown b{display:block;color:#a92847;font-size:28px}
-.countdown small{font-size:9px}
+.countdown small{font-size:9px;letter-spacing:.5px}
 .card{display:flex;gap:18px;align-items:center}
-.card h2{margin:0 0 9px;color:#b34e68;font-size:20px;text-transform:uppercase}
-.card p{line-height:1.5}
-.icon{width:62px;height:62px;flex:0 0 62px}
-.place-photo{width:78px;height:78px;flex:0 0 78px;object-fit:cover;border-radius:14px;border:1px solid #efd1d8}
+.card h2{margin:0 0 9px;color:#b34e68;font-size:20px;text-transform:uppercase;letter-spacing:.4px}
+.card p{line-height:1.5;margin:7px 0}
+.icon{width:72px;height:72px;flex:0 0 72px}
+.elegant-icon{filter:drop-shadow(0 2px 3px #b34e6822)}
+.place-photo{width:94px;height:94px;flex:0 0 94px;object-fit:cover;border-radius:15px;border:1px solid #efd1d8;box-shadow:0 2px 8px #8c55601a}
 .btn,.whatsapp{display:block;width:min(100%,330px);margin:10px auto 0;padding:11px 16px;border-radius:24px;text-align:center;text-decoration:none;font-weight:bold}
 .btn{background:#dc6380;color:#fff}
 .whatsapp{background:#dc5d7c;color:#fff}
-.dual-icons{display:flex;gap:10px;flex:0 0 130px;justify-content:center;align-items:center}
-.dual-icons img{width:58px;height:78px;object-fit:cover;border-radius:6px}
-.album-grid{display:flex;gap:9px}
-.album-grid span{padding:22px;background:#f1dce1;border-radius:9px;font-size:28px}
-.bottom{position:sticky;bottom:0;z-index:20;display:flex;justify-content:space-around;background:#dc5d7c;color:#fff;padding:7px 3px}
-.bottom a{color:#fff;text-decoration:none;text-align:center;font-size:17px}
-.bottom small{display:block;font-size:8px}
+.dual-icons{display:flex;gap:14px;flex:0 0 160px;justify-content:center;align-items:center}
+.dual-icons img{width:66px;height:110px;object-fit:contain;background:#fff8f5;border-radius:12px;box-shadow:0 2px 8px #8c556015;padding:4px}
+.dress-card{align-items:center}
+.dress-copy{flex:1}
+.dress-copy .formal{margin-top:2px}
+.reserved{display:flex;align-items:center;gap:12px;font-size:1.05rem}
+.reserved strong{font-weight:900;color:#6b363f}.rosa-text{font-size:1.35rem;font-weight:900;color:#cf5474;letter-spacing:.5px}
+.pink-dot{display:inline-block;width:30px;height:30px;border-radius:50%;background:#df6788;border:3px solid #fff;box-shadow:0 0 0 1px #d38a9b,0 2px 7px #b54f6933;flex:0 0 30px}
+.bottom{position:fixed;left:50%;bottom:0;transform:translateX(-50%);width:min(760px,100%);z-index:20;display:grid;grid-template-columns:repeat(6,1fr);background:#dc5d7c;color:#fff;padding:7px 4px calc(7px + env(safe-area-inset-bottom));box-shadow:0 -4px 14px #7d3b4d33}
+.bottom a{color:#fff;text-decoration:none;text-align:center;font-size:10px;min-width:0}
+.bottom img{display:block;width:36px;height:36px;object-fit:cover;border-radius:10px;margin:0 auto 3px;border:1px solid #ffffff55;background:#f6dce2}
+.bottom a:nth-child(2) img,.bottom a:nth-child(3) img{object-fit:cover}
+.bottom small{display:block;font-size:8px;letter-spacing:.2px}
 footer{text-align:center;padding:26px;color:#8b5961}
-.music-card{margin:18px 0 0;padding:13px 14px;background:#fff;border:1px solid #efd1d8;border-radius:14px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 2px 9px #8c556012}
+.music-card{margin:18px 0 0;padding:14px;background:#fff;border:1px solid #efd1d8;border-radius:15px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:10px;box-shadow:0 2px 9px #8c556012}
 .music-copy{display:flex;align-items:center;gap:10px;text-align:left}
 .music-copy strong{display:block;color:#a84d62;font-size:14px}
 .music-copy small{display:block;margin-top:3px;color:#7c5a60;font-size:11px}
-.music-note{width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:#f9e2e7;color:#b34e68;font-size:20px}
-.music-btn{border:0;border-radius:22px;padding:10px 14px;background:#dc6380;color:#fff;font:inherit;font-size:12px;font-weight:bold;cursor:pointer;white-space:nowrap}
-.music-status{display:block;width:100%;font-size:10px;color:#8b5961;text-align:center;margin-top:4px}
-.music-frame{display:none;width:1px;height:1px;border:0;opacity:0;pointer-events:none}
-@media(max-width:560px){
-  .card{align-items:flex-start}
-  .card h2{font-size:17px}
-  .countdown b{font-size:23px}
-  .dual-icons{flex-basis:100px}
-  .place-photo{width:68px;height:68px;flex-basis:68px}
-  .music-card{align-items:stretch;flex-direction:column}
-  .music-btn{width:100%}
-}
-
-
-/* Ajustes finales: vestimenta y música local sin anuncios */
-.dress-card{align-items:center}
-.dress-card .dual-icons{display:flex;align-items:center;justify-content:center;gap:18px;min-width:150px}
-.dress-card .dual-icons img{width:78px;height:125px;object-fit:contain;background:transparent;border-radius:0;box-shadow:none}
-.dress-copy{flex:1}
-.reserved{display:flex;align-items:center;gap:10px;font-size:1.05rem}
-.reserved strong{font-weight:800}
-.pink-dot{display:inline-block;width:24px;height:24px;border-radius:50%;background:#e36b8a;border:2px solid #fff;box-shadow:0 0 0 1px #d38a9b}
+.music-note{width:38px;height:38px;display:grid;place-items:center;border-radius:12px;background:#f9e2e7;color:#b34e68;font-size:23px}
+.music-btn{border:0;border-radius:22px;padding:10px 15px;background:#dc6380;color:#fff;font:inherit;font-size:12px;font-weight:bold;cursor:pointer;white-space:nowrap}
+.music-status{grid-column:1/-1;display:block;width:100%;font-size:10px;color:#8b5961;text-align:center;margin-top:0}
 .music-card audio{display:none}
+@media(max-width:560px){
+ body{padding-bottom:82px}
+ .section{padding:18px}
+ .card{align-items:flex-start}
+ .card h2{font-size:17px}
+ .countdown b{font-size:23px}
+ .dual-icons{flex-basis:115px;gap:7px}
+ .dual-icons img{width:50px;height:95px}
+ .place-photo{width:82px;height:82px;flex-basis:82px}
+ .music-card{grid-template-columns:1fr}
+ .music-btn{width:100%}
+ .bottom img{width:32px;height:32px}
+ .bottom small{font-size:7px}
+ .reserved{align-items:center}
+}
