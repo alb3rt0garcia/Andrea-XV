@@ -1,9 +1,7 @@
-# Andrea XV — versión final
+Andrea XV · V6
 
-- Portada limpia, sin líneas/mancha en la zona de “LOS”.
-- En la primera página, la sección de confirmación conserva únicamente “TU CONFIRMACIÓN ES IMPORTANTE”.
-- La confirmación completa con WhatsApp permanece disponible dentro de la interfaz.
-- Música: vals instrumental original, elegante y sin anuncios, generado con Web Audio API.
-- No usa YouTube, Spotify, MP3 ni carpeta music.
-- Cuenta regresiva: 17 de octubre de 2026, 17:00 HRS.
-- Gráficos y fotografías incluidos individualmente en la raíz del proyecto.
+- Portada renombrada a portada-andrea-final-v6.png para evitar caché de versiones anteriores.
+- La primera página usa la portada limpia y muestra únicamente “TU CONFIRMACIÓN ES IMPORTANTE” en el bloque de confirmación de la portada.
+- Música de fondo: vals instrumental original generado en navegador, sin anuncios.
+- Botón opcional: “Escuchar Enchanted” abre la liga de YouTube Music proporcionada por el usuario. La reproducción/anuncios de esa liga dependen de YouTube Music y de la cuenta del visitante.
+- No requiere carpeta music ni icons.
