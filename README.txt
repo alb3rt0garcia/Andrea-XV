@@ -1,8 +1,9 @@
-Andrea XV - V8
+Andrea XV — versión solicitada
 
-- Portada usa un archivo nuevo y limpio para evitar cache de versiones anteriores.
-- Confirmacion en interfaz: solo texto "TU CONFIRMACION ES IMPORTANTE" y los dos numeros.
-- Se reincorpora un grafico elegante de confirmacion.
-- Debajo de la cuenta regresiva solo aparece ACTIVAR MUSICA.
-- La liga proporcionada de YouTube Music se intenta reproducir al tocar la portada.
-- Importante: YouTube/YouTube Music controla anuncios y no es posible garantizarlos fuera del control de su plataforma.
+- Portada basada en Imagen 1.
+- Navegación completa: Inicio, Ceremonia, Recepción, Confirmación, Álbum y Regalos.
+- Confirmación: solo “TU CONFIRMACIÓN ES IMPORTANTE” y los números 55 5127 0188 / 55 3129 6988.
+- “Descubre mi invitación” abre la liga de YouTube Music proporcionada.
+- “Activar música” también abre esa liga.
+
+Importante: una página no puede eliminar anuncios de YouTube Music. La reproducción sin anuncios depende de que quien abra el enlace tenga YouTube Music/YouTube Premium.
