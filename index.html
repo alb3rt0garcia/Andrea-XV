@@ -2,39 +2,79 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Andrea · XV Años</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#d95f7d">
+<title>Andrea XV | Invitación</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-<section id="inicio" class="cover">
-<img src="portada-andrea.jpg" alt="Invitación XV años de Andrea">
-<button id="discover">♕ DESCUBRE MI INVITACIÓN</button>
+<section class="cover" id="inicio" aria-label="Invitación principal">
+  <img src="portada-andrea-v5-limpia.png" alt="Invitación de XV años de Andrea">
+  <!-- Zona transparente sobre el botón que YA está dibujado en la portada. No se superpone otro botón. -->
+  <button id="discoverHotspot" aria-label="Descubre mi invitación"></button>
 </section>
-<section id="contenido" class="content">
-<div class="music">
-<button id="musicBtn">♫ ACTIVAR MÚSICA</button>
-<p>La canción se abrirá en YouTube Music.</p>
-<a href="https://music.youtube.com/watch?v=igIfiqqVHtA&si=yCOIPAK8pCkQwj9H" target="_blank" rel="noopener">Escuchar en YouTube Music</a>
-</div>
-<article id="ceremonia"><h2>⛪ CEREMONIA</h2><p>Parroquia del Señor del Campo Florido</p><p>17 de octubre de 2026 · 17:00 hrs</p></article>
-<article id="recepcion"><h2>🏛️ RECEPCIÓN</h2><p>WTC Mexiquense</p><p>18:00 hrs</p></article>
-<article id="confirmacion"><h2>💗 CONFIRMACIÓN</h2><p><b>TU CONFIRMACIÓN ES IMPORTANTE</b></p>
-<a class="phone" href="https://wa.me/525551270188" target="_blank">55 5127 0188</a>
-<a class="phone" href="https://wa.me/525531296988" target="_blank">55 3129 6988</a></article>
-<article id="album"><h2>📸 ÁLBUM</h2><p>Comparte tus fotografías del evento.</p></article>
-<article id="regalos"><h2>🎁 MESA DE REGALOS</h2><p>Tu presencia es mi mejor regalo.</p></article>
+
+<section id="contenido" class="section intro">
+  <p class="eyebrow">ANDREA · MIS XV AÑOS</p>
+  <h1>Una noche para recordar</h1>
+  <div class="countdown">
+    <div><b id="d">00</b><small>DÍAS</small></div>
+    <div><b id="h">00</b><small>HORAS</small></div>
+    <div><b id="m">00</b><small>MINUTOS</small></div>
+    <div><b id="s">00</b><small>SEGUNDOS</small></div>
+  </div>
+  <p class="event-date">17 DE OCTUBRE DE 2026 · 17:00 HRS</p>
+  <button id="musicButton" class="music-btn" type="button">♫ ACTIVAR MÚSICA</button>
 </section>
-<nav>
-<button data-go="inicio">⌂<small>INICIO</small></button>
-<button data-go="ceremonia">⛪<small>CEREMONIA</small></button>
-<button data-go="recepcion">🏛️<small>RECEPCIÓN</small></button>
-<button data-go="confirmacion">◉<small>CONFIRMACIÓN</small></button>
-<button data-go="album">📷<small>ÁLBUM</small></button>
-<button data-go="regalos">🎁<small>REGALOS</small></button>
-</nav>
+
+<section id="ceremonia" class="section card place-card">
+  <img class="place-photo" src="iglesia-foto.jpg" alt="Iglesia de la ceremonia">
+  <div><h2>Ceremonia religiosa</h2>
+  <p><b>17:00 HRS</b><br>Parroquia del Señor del Campo Florido</p>
+  <a class="btn" target="_blank" rel="noopener" href="https://maps.google.com/?q=19.498005,-99.231422">Ver en Maps</a></div>
+</section>
+
+<section id="recepcion" class="section card place-card">
+  <img class="place-photo" src="wtc-foto.jpg" alt="WTC Ciudad Satélite Salones y Banquetes">
+  <div><h2>Recepción</h2>
+  <p><b>18:00 HRS</b><br>WTC Mexiquense<br>Naucalpan, Estado de México</p>
+  <a class="btn" target="_blank" rel="noopener" href="https://waze.com/ul/h9g3qvvgg6">Ver en Waze</a></div>
+</section>
+
+<section id="confirmacion" class="section card">
+  <img class="section-icon" src="confirmacion-elegante.svg" alt="Confirmación por WhatsApp">
+  <div><h2>Confirmación</h2>
+  <p><strong>TU CONFIRMACIÓN ES IMPORTANTE</strong></p>
+  <a class="whatsapp" target="_blank" rel="noopener" href="https://wa.me/525551270188">55 5127 0188</a>
+  <a class="whatsapp" target="_blank" rel="noopener" href="https://wa.me/525531296988">55 3129 6988</a></div>
+</section>
+
+<section id="vestimenta" class="section card dress-card">
+  <div class="dual-icons"><img src="traje-limpio.png" alt="Traje formal completo"><img src="vestido-limpio.png" alt="Vestido formal completo"></div>
+  <div><h2>Código de vestimenta</h2><p><strong>FORMAL</strong></p>
+  <p class="reserved"><strong>COLOR RESERVADO:</strong> <span>ROSA</span><i aria-label="Color rosa"></i></p></div>
+</section>
+
+<section id="album" class="section card">
+  <img class="section-icon" src="album-elegante.svg" alt="Álbum digital">
+  <div><h2>Álbum digital</h2><p>Comparte las fotografías de esta celebración.</p></div>
+</section>
+
+<section id="regalos" class="section card">
+  <img class="section-icon" src="regalo-elegante.svg" alt="Mesa de regalos">
+  <div><h2>Mesa de regalos</h2><p>Tu presencia es mi mejor regalo.</p></div>
+</section>
 </main>
+
+<nav class="bottom" aria-label="Navegación de la invitación">
+  <a href="#inicio"><img src="inicio.svg" alt=""><small>INICIO</small></a>
+  <a href="#ceremonia"><img class="photo-icon" src="iglesia-foto.jpg" alt=""><small>CEREMONIA</small></a>
+  <a href="#recepcion"><img class="photo-icon" src="wtc-foto.jpg" alt=""><small>RECEPCIÓN</small></a>
+  <a href="#confirmacion"><img src="confirmacion-elegante.svg" alt=""><small>CONFIRMACIÓN</small></a>
+  <a href="#album"><img src="album-elegante.svg" alt=""><small>ÁLBUM</small></a>
+  <a href="#regalos"><img src="regalo-elegante.svg" alt=""><small>REGALOS</small></a>
+</nav>
 <script src="script.js"></script>
 </body>
 </html>
