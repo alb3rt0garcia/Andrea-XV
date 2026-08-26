@@ -1,10 +1,12 @@
 const musicUrl="https://music.youtube.com/watch?v=igIfiqqVHtA&si=yCOIPAK8pCkQwj9H";
+
 function discover(){
   document.getElementById("contenido").scrollIntoView({behavior:"smooth"});
   window.open(musicUrl,"_blank","noopener");
 }
-document.getElementById("discoverHotspot").addEventListener("click",discover);
+document.getElementById("discoverArea").addEventListener("click",discover);
 document.getElementById("musicButton").addEventListener("click",()=>window.open(musicUrl,"_blank","noopener"));
+
 const target=new Date("2026-10-17T17:00:00-06:00").getTime();
 function tick(){
   let n=Math.max(0,target-Date.now());
