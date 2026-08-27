@@ -1,95 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#d94d76">
-<title>Andrea XV | Invitación</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andrea XV</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<main>
-  <section class="cover" id="inicio" aria-label="Invitación principal">
-    <!-- La portada es la imagen original. NO se coloca otro botón encima. -->
-    <img src="portada-andrea-v5-limpia.png" usemap="#portadaMap" alt="Invitación de XV años de Andrea">
-    <map name="portadaMap">
-      <!-- Área invisible exactamente sobre el botón que ya está dibujado en la portada. -->
-      <area id="discoverArea" shape="rect" coords="220,905,790,1005"
-            href="#contenido" alt="Descubre mi invitación">
-    </map>
-  </section>
+<header class="hero">
+<div class="monograma">A</div>
+<h1>Andrea</h1>
+<h2>XV Años</h2>
+<p>17 de octubre de 2026</p>
+<a class="btn" href="#evento">Abrir invitación</a>
+</header>
 
-  <section id="contenido" class="section intro">
-    <p class="eyebrow">ANDREA · MIS XV AÑOS</p>
-    <h1>Una noche para recordar</h1>
-    <div class="countdown">
-      <div><b id="d">00</b><small>DÍAS</small></div>
-      <div><b id="h">00</b><small>HORAS</small></div>
-      <div><b id="m">00</b><small>MINUTOS</small></div>
-      <div><b id="s">00</b><small>SEGUNDOS</small></div>
-    </div>
-    <p class="event-date">17 DE OCTUBRE DE 2026 · 17:00 HRS</p>
-    <button id="musicButton" class="music-btn" type="button">♫ ACTIVAR MÚSICA</button>
-  </section>
+<main id="evento">
+<section><h2>Con la bendición de Dios</h2>
+<p>Y el amor de mis padres</p>
+<p>Blanca Castillo y Alberto García</p></section>
 
-  <section id="ceremonia" class="section card">
-    <img class="section-icon" src="icono-ceremonia.png" alt="Gráfico de iglesia de la invitación">
-    <div>
-      <h2>CEREMONIA RELIGIOSA</h2>
-      <p><b>17:00 HRS</b><br>Parroquia del Señor del Campo Florido</p>
-      <img class="place-photo" src="iglesia-foto.jpg" alt="Iglesia de la ceremonia">
-      <a class="btn" target="_blank" rel="noopener" href="https://maps.google.com/?q=19.498005,-99.231422">Ver en Maps</a>
-    </div>
-  </section>
+<section><h2>Ceremonia</h2>
+<p>Parroquia del Señor del Campo Florido</p>
+<p>17:00 hrs</p>
+<a class="btn" href="https://maps.google.com/?q=19.498005,-99.231422">Ubicación</a></section>
 
-  <section id="recepcion" class="section card">
-    <img class="section-icon" src="icono-recepcion.png" alt="Gráfico del WTC de la invitación">
-    <div>
-      <h2>RECEPCIÓN</h2>
-      <p><b>18:00 HRS</b><br>WTC Mexiquense<br>Naucalpan, Estado de México</p>
-      <img class="place-photo" src="wtc-foto.jpg" alt="WTC Ciudad Satélite">
-      <a class="btn" target="_blank" rel="noopener" href="https://waze.com/ul/h9g3qvvgg6">Ver en Waze</a>
-    </div>
-  </section>
+<section><h2>Recepción</h2>
+<p>WTC Mexiquense</p>
+<p>18:00 hrs</p></section>
 
-  <section id="confirmacion" class="section card">
-    <img class="section-icon" src="confirmacion-elegante.svg" alt="Confirmación por WhatsApp">
-    <div>
-      <h2>CONFIRMACIÓN</h2>
-      <p><strong>TU CONFIRMACIÓN ES IMPORTANTE</strong></p>
-      <a class="whatsapp" target="_blank" rel="noopener" href="https://wa.me/525551270188">55 5127 0188</a>
-      <a class="whatsapp" target="_blank" rel="noopener" href="https://wa.me/525531296988">55 3129 6988</a>
-    </div>
-  </section>
+<section><h2>Código de vestimenta</h2>
+<p>Formal · Etiqueta</p>
+<p>Color reservado: Rosa</p></section>
 
-  <section id="vestimenta" class="section dress-card">
-    <img class="dress-source" src="vestimenta-grafico.png" alt="Código de vestimenta de la invitación">
-    <div>
-      <h2>CÓDIGO DE VESTIMENTA</h2>
-      <p><strong>FORMAL / ETIQUETA</strong></p>
-      <p class="reserved"><strong>COLOR RESERVADO: <span>ROSA</span></strong><i aria-label="Color rosa"></i></p>
-    </div>
-  </section>
-
-  <section id="album" class="section card">
-    <img class="section-icon" src="album-elegante.svg" alt="Álbum digital">
-    <div><h2>ÁLBUM DIGITAL</h2><p>Comparte las fotografías de esta celebración.</p></div>
-  </section>
-
-  <section id="regalos" class="section card">
-    <img class="section-icon" src="icono-regalos.png" alt="Gráfico de regalo de la invitación">
-    <div><h2>MESA DE REGALOS</h2><p>Tu presencia es mi mejor regalo.</p></div>
-  </section>
+<section><h2>Confirmación</h2>
+<a class="btn" href="https://wa.me/525551270188">Confirmar asistencia</a></section>
 </main>
-
-<nav class="bottom" aria-label="Navegación de la invitación">
-  <a href="#inicio"><img src="icono-inicio.png" alt=""><small>INICIO</small></a>
-  <a href="#ceremonia"><img src="icono-ceremonia.png" alt=""><small>CEREMONIA</small></a>
-  <a href="#recepcion"><img src="icono-recepcion.png" alt=""><small>RECEPCIÓN</small></a>
-  <a href="#confirmacion"><img src="confirmacion-elegante.svg" alt=""><small>CONFIRMACIÓN</small></a>
-  <a href="#album"><img src="album-elegante.svg" alt=""><small>ÁLBUM</small></a>
-  <a href="#regalos"><img src="icono-regalos.png" alt=""><small>REGALOS</small></a>
-</nav>
-<script src="script.js"></script>
+<script src="js/script.js"></script>
+<!-- ALBUM DIGITAL ANDREA: integrado en index.html; no requiere carpetas externas -->
+<section id="album-digital-andrea" aria-label="Álbum Digital" style="margin:28px auto;padding:34px 18px;background:linear-gradient(180deg,#fffafb,#f7e8ed);border:1px solid #ead4dc;border-radius:26px;text-align:center;max-width:760px;box-sizing:border-box;color:#5b414a;">
+<div style="max-width:600px;margin:0 auto;">
+<div style="font-size:38px;">📸</div>
+<div style="letter-spacing:3px;font-size:12px;color:#a06f83;margin:6px 0 10px;">ÁLBUM DIGITAL</div>
+<h2 style="font-size:30px;font-weight:500;margin:0 0 12px;">Comparte tus fotos</h2>
+<p style="line-height:1.65;margin:0 auto 18px;color:#6b535b;">Ayúdame a guardar los recuerdos más especiales de esta noche. Escanea el código QR o pulsa el botón para compartir tus fotografías.</p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScTSVs1s8qVwXV4nHPw_q_FwDyvRDkKytyEW_v4HBglNYHQHw/viewform?usp=header" target="_blank" rel="noopener" style="display:inline-block;background:#b58b62;color:#fff;text-decoration:none;padding:13px 22px;border-radius:28px;font-family:Arial,sans-serif;font-weight:600;margin:4px 0 18px;">📸 COMPARTIR MIS FOTOS</a>
+<img src="data:image/png;base64,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" alt="Código QR para compartir fotos de los XV años de Andrea" style="display:block;width:min(260px,72vw);height:auto;margin:4px auto 16px;background:#fff;padding:10px;border-radius:14px;">
+<p style="font-style:italic;color:#8b6b76;margin:0;">Gracias por ser parte de este recuerdo. 💗</p>
+</div></section>
+<!-- FIN ALBUM DIGITAL ANDREA -->
 </body>
 </html>
