@@ -41,3 +41,33 @@ body{margin:0;padding-bottom:94px;background:#f8e8ec;color:#47262e;font-family:G
  .bottom small{font-size:7px}
  .countdown b{font-size:24px}
 }
+
+/* RESTITUCIÓN INTERFAZ + QR/FOTOS */
+.cover-hit{
+ position:absolute; left:20%; right:20%; bottom:3.7%; height:9%;
+ border:0; border-radius:999px; background:transparent; cursor:pointer;
+}
+.card-content.full{width:100%;text-align:center}
+.confirmation-clean{min-height:0}
+.confirmation-clean .card-content{padding:0}
+.wtc-logo{object-fit:contain;background:#111}
+.album-card{
+ display:flex;align-items:center;gap:28px;
+ max-width:900px;margin:18px auto 0;padding:30px 18px;
+ background:#fff8f7;border:1px solid #e9b0bf;border-radius:26px;
+ box-shadow:0 8px 24px rgba(120,50,70,.08)
+}
+.album-content{flex:1;text-align:center}
+.qr-image{width:min(260px,75vw);height:auto;display:block;margin:16px auto;border:10px solid white;border-radius:18px;box-shadow:0 4px 18px rgba(80,20,40,.12)}
+.qr-link{display:inline-block}
+.album-btn{margin-top:4px}
+.gift-clean{justify-content:center;text-align:center}
+.gift-emoji{font-size:82px;line-height:1}
+.nav-gift{width:42px;height:42px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:26px}
+@media(max-width:600px){
+ .album-card{display:block;text-align:center;margin-top:12px;padding:22px 14px}
+ .album-card .section-icon{display:block;margin:0 auto 14px}
+ .cover-hit{left:17%;right:17%;bottom:2.8%;height:10%}
+ .gift-emoji{font-size:66px;margin-bottom:10px}
+ .nav-gift{width:38px;height:38px;font-size:23px}
+}
