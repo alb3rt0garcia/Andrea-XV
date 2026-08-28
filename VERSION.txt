@@ -1,2 +1,2 @@
-Andrea XV FINAL4-CACHE-RESET
-Esta versión usa nombres nuevos para CSS, JS y portada para evitar que Safari/GitHub Pages muestre archivos anteriores.
+Andrea XV FINAL5-LAYOUT-FIX
+Corrección: se retiró la confirmación superpuesta de la portada y se colocó en una tarjeta independiente para evitar recuadros vacíos y texto fuera de posición.
