@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380">
+<defs>
+<linearGradient id="suitG"><stop stop-color="#15263d"/><stop offset="1" stop-color="#314a6b"/></linearGradient>
+<linearGradient id="dressG"><stop stop-color="#f7c2cf"/><stop offset="1" stop-color="#df809c"/></linearGradient>
+</defs>
+<g transform="translate(55 25)">
+<path d="M88 12 56 30 28 104l40 19 13-42v214h38V171h30v124h38V81l13 42 40-19-28-74-32-18-28 41-16-23-16 23Z" fill="url(#suitG)" stroke="#142034" stroke-width="3"/>
+<path d="M100 14 136 53 172 14" fill="none" stroke="#e8eef5" stroke-width="5"/>
+<path d="M136 53v45" stroke="#e8eef5" stroke-width="3"/>
+<path d="m127 54 9 12 9-12-9-15Z" fill="#c95777"/>
+</g>
+<g transform="translate(340 25)">
+<path d="M95 10h54l9 48 28 42-27 25 48 178H37l48-178-27-25 28-42Z" fill="url(#dressG)" stroke="#b95b77" stroke-width="3"/>
+<path d="M95 10c6 29 48 29 54 0" fill="#fae3e9" stroke="#b95b77" stroke-width="3"/>
+<path d="M85 124h74" stroke="#fff3f6" stroke-width="5"/>
+<path d="M73 162c38 15 78 15 116 0M61 207c50 17 103 17 153 0M48 255c62 18 127 18 189 0" fill="none" stroke="#f9d4de" stroke-width="3"/>
+</g>
+<text x="300" y="362" text-anchor="middle" font-family="Georgia,serif" font-size="28" font-style="italic" fill="#5e4149">Formal / Etiqueta</text>
+</svg>
