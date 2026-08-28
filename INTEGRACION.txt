@@ -1,0 +1,18 @@
+INTEGRACIÓN SEGURA — ANDREA XV
+
+Solo reemplazar:
+index.html
+
+NO tocar css/style.css, js/script.js, assets/ ni ningún otro archivo.
+
+Pasos:
+1. Haz respaldo del index.html actual.
+2. Descomprime este ZIP.
+3. Reemplaza SOLO index.html en el repositorio Andrea-XV.
+4. Commit changes en main.
+5. Espera GitHub Pages.
+6. Prueba Álbum Digital.
+
+El álbum y el QR están dentro del index.html; no se crean carpetas.
+Formulario probado:
+https://docs.google.com/forms/d/e/1FAIpQLScTSVs1s8qVwXV4nHPw_q_FwDyvRDkKytyEW_v4HBglNYHQHw/viewform?usp=header
