@@ -5,15 +5,37 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#d8587a">
 <title>Andrea XV | Invitación</title>
-<link rel="stylesheet" href="andrea-final4.css?v=4">
+<link rel="stylesheet" href="andrea-final6.css?v=6">
 </head>
-<body data-andrea-build="FINAL4-CACHE-RESET">
+<body data-build="FINAL6-CINDERELLA">
 <main>
   <section class="cover" id="inicio">
-    <img src="portada-andrea-final4.png?v=4" alt="Invitación de XV años de Andrea">
+    <img src="portada-andrea-final4.png?v=6" alt="Invitación de XV años de Andrea">
 
-    <!-- Zona transparente sobre el botón ya dibujado en la portada -->
     <button id="discoverButton" class="cover-hit" aria-label="Descubre mi invitación"></button>
+
+    <svg class="confirm-overlay" viewBox="0 0 1024 1536" preserveAspectRatio="xMidYMid meet" aria-label="Confirmación por WhatsApp">
+      <g transform="translate(370 1258)">
+        <circle cx="142" cy="42" r="23" fill="#25D366"/>
+        <path d="M132 30c-5 5-5 13-1 21 5 9 14 16 23 17 7 1 13-2 16-7l-13-6-6 6c-8-4-13-9-17-17l6-6-8-8Z" fill="#fff"/>
+        <text x="142" y="87" text-anchor="middle" class="confirm-title">CONFIRMACIÓN</text>
+        <text x="142" y="108" text-anchor="middle" class="confirm-copy">TU CONFIRMACIÓN ES IMPORTANTE</text>
+
+        <a href="https://wa.me/525551270188?text=Andrea%20confirmo%20mi%20asistencia%20a%20tus%20XV%20a%C3%B1os" target="_blank" rel="noopener">
+          <rect x="22" y="122" width="240" height="37" rx="18.5" class="wa-pill"/>
+          <circle cx="47" cy="140.5" r="11" fill="#25D366"/>
+          <path d="M42 135c-2 2-2 5 0 8 2 4 6 6 10 7 3 0 5-1 6-3l-5-2-2 2c-3-1-5-3-7-6l2-2-4-4Z" fill="#fff"/>
+          <text x="158" y="146" text-anchor="middle" class="wa-number">55 5127 0188</text>
+        </a>
+
+        <a href="https://wa.me/525531296988?text=Andrea%20confirmo%20mi%20asistencia%20a%20tus%20XV%20a%C3%B1os" target="_blank" rel="noopener">
+          <rect x="22" y="166" width="240" height="37" rx="18.5" class="wa-pill"/>
+          <circle cx="47" cy="184.5" r="11" fill="#25D366"/>
+          <path d="M42 179c-2 2-2 5 0 8 2 4 6 6 10 7 3 0 5-1 6-3l-5-2-2 2c-3-1-5-3-7-6l2-2-4-4Z" fill="#fff"/>
+          <text x="158" y="190" text-anchor="middle" class="wa-number">55 3129 6988</text>
+        </a>
+      </g>
+    </svg>
   </section>
 
   <section id="contenido" class="section intro">
@@ -26,63 +48,73 @@
       <div><b id="s">00</b><small>SEGUNDOS</small></div>
     </div>
     <p>17 DE OCTUBRE DE 2026 · 18:00 HRS</p>
-    <button id="musicButton" class="music-btn">♫ ACTIVAR MÚSICA</button>
-    <audio id="music" preload="auto" loop><source src="vals-andrea.wav" type="audio/wav"></audio>
   </section>
 
   <section id="ceremonia" class="section place-card">
     <h2>CEREMONIA RELIGIOSA</h2>
     <p><b>Parroquia del Señor del Campo Florido</b><br>17 de octubre de 2026 · 17:00 horas</p>
-    <img class="venue-photo" src="iglesia-foto.jpg" alt="Iglesia de la ceremonia">
+    <img class="venue-photo" src="iglesia-foto.jpg?v=6" alt="Iglesia de la ceremonia">
     <a class="btn" target="_blank" rel="noopener" href="https://maps.google.com/?q=19.498005,-99.231422">VER EN GOOGLE MAPS</a>
   </section>
 
   <section id="recepcion" class="section place-card">
     <h2>RECEPCIÓN</h2>
     <p><b>WTC MEXIQUENSE</b><br>Circuito Circunvalación Oriente 10, Ciudad Satélite<br>Naucalpan de Juárez, Estado de México · 18:00 horas</p>
-    <img class="venue-photo wtc" src="wtc-foto.jpg" alt="WTC Mexiquense">
+    <img class="venue-photo wtc" src="wtc-foto.jpg?v=6" alt="WTC Mexiquense">
     <a class="btn" target="_blank" rel="noopener" href="https://waze.com/ul/h9g3qvvgg6">VER EN WAZE</a>
   </section>
 
-  <section id="confirmacion" class="section confirm-card-fixed">
-    <div class="confirm-icon-fixed">◔</div>
+  <section id="confirmacion" class="section confirm-card">
+    <div class="wa-big"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 9a21 21 0 0 0-18 32L10 55l14-4a21 21 0 1 0 8-42Z" fill="#25D366"/><path d="M23 20c-2 2-3 5-2 8 2 7 9 14 16 16 3 1 6 0 8-2l2-4-7-3-3 3c-4-2-7-5-9-9l3-3-3-7Z" fill="#fff"/></svg></div>
     <h2>CONFIRMACIÓN</h2>
-    <p><strong>TU CONFIRMACIÓN ES IMPORTANTE</strong></p>
-    <a class="whatsapp" href="https://wa.me/525551270188" target="_blank" rel="noopener">55 5127 0188</a>
-    <a class="whatsapp" href="https://wa.me/525531296988" target="_blank" rel="noopener">55 3129 6988</a>
+    <p>Tu confirmación es muy importante para que todo sea perfecto.</p>
+    <a class="confirm-main" href="https://wa.me/525551270188?text=Andrea%20confirmo%20mi%20asistencia%20a%20tus%20XV%20a%C3%B1os" target="_blank" rel="noopener"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 9a21 21 0 0 0-18 32L10 55l14-4a21 21 0 1 0 8-42Z" fill="#25D366"/><path d="M23 20c-2 2-3 5-2 8 2 7 9 14 16 16 3 1 6 0 8-2l2-4-7-3-3 3c-4-2-7-5-9-9l3-3-3-7Z" fill="#fff"/></svg><span>CONFIRMAR ASISTENCIA</span></a>
+    <a class="whatsapp" href="https://wa.me/525551270188?text=Andrea%20confirmo%20mi%20asistencia%20a%20tus%20XV%20a%C3%B1os" target="_blank" rel="noopener"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 9a21 21 0 0 0-18 32L10 55l14-4a21 21 0 1 0 8-42Z" fill="#25D366"/><path d="M23 20c-2 2-3 5-2 8 2 7 9 14 16 16 3 1 6 0 8-2l2-4-7-3-3 3c-4-2-7-5-9-9l3-3-3-7Z" fill="#fff"/></svg><span>55 5127 0188</span></a>
+    <a class="whatsapp" href="https://wa.me/525531296988?text=Andrea%20confirmo%20mi%20asistencia%20a%20tus%20XV%20a%C3%B1os" target="_blank" rel="noopener"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 9a21 21 0 0 0-18 32L10 55l14-4a21 21 0 1 0 8-42Z" fill="#25D366"/><path d="M23 20c-2 2-3 5-2 8 2 7 9 14 16 16 3 1 6 0 8-2l2-4-7-3-3 3c-4-2-7-5-9-9l3-3-3-7Z" fill="#fff"/></svg><span>55 3129 6988</span></a>
+    <p class="prefill">Se abrirá WhatsApp con el mensaje: “Andrea confirmo mi asistencia a tus XV años”.</p>
   </section>
 
   <section id="vestimenta" class="section dress-card">
     <h2>CÓDIGO DE VESTIMENTA</h2>
-    <img src="vestimenta-grafico.png" alt="Traje y vestido">
+    <img src="vestimenta-grafico.png?v=6" alt="Traje y vestido">
     <p><b>Formal / Etiqueta</b><br>COLOR RESERVADO: <strong>ROSA</strong></p>
   </section>
 
   <section id="album" class="section album-card">
-    <img class="camera-icon" src="camara-elegante.svg" alt="Cámara">
+    <div class="camera-big"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 22h10l4-7h16l4 7h10v30H10Z"/><circle cx="32" cy="37" r="10" fill="none" stroke="currentColor" stroke-width="4"/></svg></div>
     <h2>ÁLBUM DIGITAL</h2>
     <p><b>COMPARTE CONMIGO TUS FOTOS</b></p>
     <p>Escanea el código QR o pulsa el botón para subir tus fotografías al álbum digital.</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScTSVs1s8qVwXV4nHPw_q_FwDyvRDkKytyEW_v4HBglNYHQHw/viewform?usp=header" target="_blank" rel="noopener"><img class="qr-image" src="qr-album-andrea.png" alt="Código QR para subir fotos"></a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScTSVs1s8qVwXV4nHPw_q_FwDyvRDkKytyEW_v4HBglNYHQHw/viewform?usp=header" target="_blank" rel="noopener"><img class="qr-image" src="qr-album-andrea.png?v=6" alt="Código QR para subir fotos"></a>
     <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScTSVs1s8qVwXV4nHPw_q_FwDyvRDkKytyEW_v4HBglNYHQHw/viewform?usp=header" target="_blank" rel="noopener">📸 SUBIR MIS FOTOS</a>
   </section>
 
   <section id="regalos" class="section gift-card">
-    <div class="gift-emoji">🎁</div>
+    <div class="gift-big"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 27h44v29H10Zm-3-9h50v12H7Zm25 0v38M32 18c-4-10-17-9-15-2 2 5 9 2 15 2Zm0 0c4-10 17-9 15-2-2 5-9 2-15 2Z"/></svg></div>
     <h2>MESA DE REGALOS</h2>
     <p><b>TU PRESENCIA ES MI MEJOR REGALO</b></p>
     <p>Mesa de regalos y buzón de sobres.</p>
   </section>
+
+  <section class="music-card" aria-label="Música">
+    <div class="music-note">♪</div>
+    <div class="music-text"><strong>Cinderella Waltz</strong><small>Warm Grand Piano and Seattle Strings</small></div>
+    <button id="musicButton" type="button" aria-label="Reproducir o pausar música">▶</button>
+    <audio id="music" preload="auto" loop>
+      <source src="cinderella-waltz-andrea.mp3" type="audio/mpeg">
+    </audio>
+  </section>
 </main>
 
-<nav class="bottom">
-  <a href="#inicio"><img src="icono-inicio.png" alt=""><small>INICIO</small></a>
-  <a href="#ceremonia"><img src="icono-ceremonia.png" alt=""><small>CEREMONIA</small></a>
-  <a href="#recepcion"><img src="icono-recepcion.png" alt=""><small>RECEPCIÓN</small></a>
-  <a href="#confirmacion"><span>◔</span><small>CONFIRMACIÓN</small></a>
-  <a href="#album"><img src="camara-elegante.svg" alt=""><small>ÁLBUM</small></a>
-  <a href="#regalos"><span>🎁</span><small>REGALOS</small></a>
+<nav class="bottom" aria-label="Navegación">
+  <a href="#inicio"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 31 32 12l22 19v23H39V39H25v15H10Z"/></svg><small>INICIO</small></a>
+  <a href="#ceremonia"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M28 9h8v9h8v7h-8v7h-8v-7h-8v-7h8Zm-13 27 17-13 17 13v20H15Zm7 20V40h20v16M29 42h6v14"/></svg><small>CEREMONIA</small></a>
+  <a href="#recepcion"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 51h48M13 51V30h38v21M18 30V20l14-9 14 9v10M20 38h5v13M30 38h5v13M40 38h5v13"/></svg><small>RECEPCIÓN</small></a>
+  <a href="https://wa.me/525551270188?text=Andrea%20confirmo%20mi%20asistencia%20a%20tus%20XV%20a%C3%B1os" target="_blank" rel="noopener"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 9a21 21 0 0 0-18 32L10 55l14-4a21 21 0 1 0 8-42Z" fill="#25D366"/><path d="M23 20c-2 2-3 5-2 8 2 7 9 14 16 16 3 1 6 0 8-2l2-4-7-3-3 3c-4-2-7-5-9-9l3-3-3-7Z" fill="#fff"/></svg><small>CONFIRMACIÓN</small></a>
+  <a href="#album"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 22h10l4-7h16l4 7h10v30H10Z"/><circle cx="32" cy="37" r="10" fill="none" stroke="currentColor" stroke-width="4"/></svg><small>ÁLBUM</small></a>
+  <a href="#regalos"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 27h44v29H10Zm-3-9h50v12H7Zm25 0v38M32 18c-4-10-17-9-15-2 2 5 9 2 15 2Zm0 0c4-10 17-9 15-2-2 5-9 2-15 2Z"/></svg><small>REGALOS</small></a>
 </nav>
-<script src="andrea-final4.js?v=4"></script>
+
+<script src="andrea-final6.js?v=6"></script>
 </body>
 </html>

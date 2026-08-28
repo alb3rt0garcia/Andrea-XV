@@ -1,2 +1,1 @@
-Andrea XV FINAL5-LAYOUT-FIX
-Corrección: se retiró la confirmación superpuesta de la portada y se colocó en una tarjeta independiente para evitar recuadros vacíos y texto fuera de posición.
+FINAL6-CINDERELLA
